@@ -69,6 +69,8 @@ define Build/Configure
 endef
 
 define Build/Compile
+	# 使用 UPX 压缩二进制文件以减小体积
+	$(STAGING_DIR_HOST)/bin/upx --best $(TAR_DIR)/nezha-agent
 endef
 
 define Package/$(PKG_NAME)/install
