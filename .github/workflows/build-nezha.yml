@@ -98,6 +98,9 @@ jobs:
         mv -f $GITHUB_WORKSPACE/.github/.config_arm64 .config
         make -j2 toolchain/install
         make -j2 package/openwrt-nezha/compile V=99
+        mv -f $GITHUB_WORKSPACE/.github/.config_mipsel .config
+        make -j2 toolchain/install
+        make -j2 package/openwrt-nezha/compile V=99
         echo "::set-output name=status::success"
 
     - name: Upload bin directory
