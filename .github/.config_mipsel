@@ -31,7 +31,8 @@ CONFIG_HAVE_DOT_CONFIG=y
 # CONFIG_TARGET_mediatek is not set
 CONFIG_TARGET_ramips=y
 # CONFIG_TARGET_ramips_mt7620 is not set
-CONFIG_TARGET_ramips_mt7621=y
+# CONFIG_TARGET_ramips_mt7621 is not set
+CONFIG_TARGET_ramips_mt7628=y
 # CONFIG_TARGET_rb532 is not set
 # CONFIG_TARGET_mcs814x is not set
 # CONFIG_TARGET_layerscape is not set
